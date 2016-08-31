@@ -123,6 +123,7 @@
 			<plugin>
 				<artifactId>exec-maven-plugin</artifactId>
 				<groupId>org.codehaus.mojo</groupId>
+				<version>1.5.0</version>
 				<executions>
 					<execution><!-- symlink hooks to git -->
 						<id>Git-Hooks-Setup</id>
@@ -167,6 +168,8 @@
 					</reportSet>
 				</reportSets>
 			</plugin>
+			
+		  
 		</plugins>
 	</reporting>
 
@@ -189,11 +192,13 @@
 			<url>http://download.java.net/maven/2/</url>
 			<layout>default</layout>
 		</repository>
+		
 		<repository>
 			<id>cogit-releases</id>
 			<name>Cogit Releases Repository</name>
 			<url>https://forge-cogit.ign.fr/nexus/content/repositories/releases/</url>
-		</repository>
+		</repository> 
+			
 
 		<repository>
 			<id>org-matheclipse-repository</id>
@@ -429,7 +434,6 @@
 			<artifactId>geoxygene-api</artifactId>
 			<version>1.6</version>
 		</dependency>
-
 		<dependency>
 			<groupId>fr.ign.cogit</groupId>
 			<artifactId>geoxygene-spatial</artifactId>
